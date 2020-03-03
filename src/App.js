@@ -4,21 +4,32 @@ import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
+import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick'
+import ClassClick from './components/ClassClick'
+import EventBind from './components/EventBind'
+import ParentComponent from './components/ParentComponent'
+import UserGreeting from './components/UserGreeting';
 
 class App extends Component {
 
   render (){
   return (
     <div className="App">
+      <UserGreeting/>
+      <ParentComponent/>
+      <FunctionClick/>
+      <ClassClick/>
+      <EventBind/>
       <Greet name= "Bruce"  heroName="Batman">
         <p> This is children props</p></Greet>
       <Greet name="clark" heroName="superman">
       <button>action</button>
       </Greet>
       
-      <Welcome name= "Bruce" heroName="Batman"/>
-      <Welcome name= "Clark" heroName="Superman"/>
-     
+      {/* <Welcome name= "Bruce" heroName="Batman"/>
+      <Welcome name= "Clark" heroName="Superman"/> */}
+       <Counter/>
        
       {/* <Greet />
       <Welcome /> */}
